@@ -99,7 +99,10 @@ RETURN IF(ISBLANK(InRisk), 0, InRisk)
 
 ```dax
 Recommended Replenishment = 
-VAR Replenishment_Units = ('Target Week Over Sales (WOS)'[Target Week Over Sales (WOS) Value] * [Avg Weekly Sales]) - [Current Units On Hand]
+VAR Replenishment_Units = 
+    ('Target Weeks of Supply'[Target Weeks of Supply] 
+        * [Avg Weekly Sales]) 
+            - [Current Units On Hand]
 
 RETURN 
 IF(Replenishment_Units > 0, Replenishment_Units, 0)
