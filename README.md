@@ -1,4 +1,4 @@
-# Allocation Dashboard for Retail
+# Retail Supply Chain Allocation Dashboard
 
 ## Objective
 This is a Power BI dashboard built from synthetic data to demonstrate KPIs used for determining inventory allocations and replenishment strategy.
